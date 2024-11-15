@@ -2,7 +2,7 @@
 FROM odoo:16.0
 
 # Copy the module to the Odoo addons directory
-COPY . /mnt/extra-addons/docker-based-app
+COPY .. /mnt/extra-addons/docker-based-app
 
 # Set ownership and permissions (adjust user as needed)
 RUN chown -R odoo:odoo /mnt/extra-addons/docker-based-app
